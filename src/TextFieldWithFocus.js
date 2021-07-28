@@ -4,15 +4,17 @@ export class TextFieldWithFocus extends React.Component {
   inputRef = React.createRef()
 
   componentDidMount () {
-    console.log(this.inputRef)
+    console.log('inputRef - componentDidMount', this.inputRef)
+  }
 
+  setFocus = () => {
     const inputDOMElement = this.inputRef.current
 
     inputDOMElement.focus()
   }
 
   render () {
-    console.log(this.inputRef)
+    console.log('inputRef - render', this.inputRef)
 
     return (
       <input
