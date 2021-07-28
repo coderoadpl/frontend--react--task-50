@@ -7,12 +7,6 @@ export class TextFieldWithFocus extends React.Component {
     console.log('inputRef - componentDidMount', this.inputRef)
   }
 
-  setFocus = () => {
-    const inputDOMElement = this.inputRef.current
-
-    inputDOMElement.focus()
-  }
-
   render () {
     console.log('inputRef - render', this.inputRef)
 
